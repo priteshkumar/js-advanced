@@ -34,3 +34,21 @@ runCi.call(devops,2); //devops is this arg
 //apply example
 devops.name = "jenkins-latest";
 runCi.apply(devops,[3]); //use args in array for apply 
+
+
+
+//iife 
+(function(){
+    console.log("invoking iife1")
+    console.log("jenkins ran 2 jobs");
+    console.log("jenkins slave set up");
+})();
+
+
+var resMap = (function(){
+    console.log("invoking iife2");
+    var ciMap = {"ci": "jenkins","version":"latest"};
+    return ciMap;
+})();
+
+console.log(resMap);
