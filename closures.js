@@ -86,4 +86,6 @@ function fhoist() {
    console.log(x);
 };
 
+//console.log(fhoist.constructor);
 fhoist();
+//console.log(fhoist.toString());
