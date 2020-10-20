@@ -42,6 +42,38 @@ var f = printStats('jenkins build started');
 f();
 
 
+
+//click example
+function clickHandler(){
+    var clicks = 0;
+    function incrementClicks(){
+        clicks++;
+        console.log('clicks : ' + clicks);
+    }
+    return incrementClicks;
+}
+
+var clickF = clickHandler();
+//test click loop
+for(var i=0; i < 3;i++){
+    clickF();
+}
+
+//click example using IIFE
+
+var updateClicks = (function(){
+    var clicks = 0;
+    var clickF = function(){
+        clicks++;
+        console.log('updated clicks ' + clicks);
+    }
+    return clickF;
+})();
+
+
+updateClicks();
+updateClicks();
+
 //hoisting demo
 
 var x = 1;
