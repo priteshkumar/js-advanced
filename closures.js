@@ -40,3 +40,18 @@ function printStats(msg){
 
 var f = printStats('jenkins build started');
 f();
+
+
+//hoisting demo
+
+var x = 1;
+
+function fhoist() {
+    //var x moves here by hoisting
+    //undefined and 2 is printed
+   console.log(x);
+   var x = 2;
+   console.log(x);
+};
+
+fhoist();
