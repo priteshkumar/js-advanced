@@ -46,3 +46,6 @@ function pythagoras(x,y,z){
 }
 
 console.log(pythagoras(3,5,4));
+
+var a = new Number("7.6");
+console.log(a.valueOf());
