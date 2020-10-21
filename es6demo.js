@@ -36,3 +36,17 @@ console.log(citool);
 //more arrow functions
 let myArrowFunction = (a,b) => console.log(a + " Arrow function " + b);
 myArrowFunction("jenkins","docker");
+
+
+let acc = () => {
+    let sum = 0;
+    for(let i=0; i < 1000; i++){
+     if(i % 3 == 0 || i % 5 == 0){
+      sum = sum + i; 
+     }
+    }
+    return sum;
+  };
+
+  console.log(acc());
+  

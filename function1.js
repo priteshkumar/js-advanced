@@ -43,6 +43,7 @@ function boardList(count) {
      }
 }
  console.log(boardList.name);
+
  console.log(boardList(3));
 
 
