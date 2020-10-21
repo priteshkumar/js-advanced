@@ -49,3 +49,13 @@ function printLetters(){
    }
 
    printUsingPromise();
+
+
+   //using async await
+   async function printAsyncLetters(){
+       await print("a");
+       await print("b");
+       await print("c");
+   } 
+
+   printAsyncLetters();
